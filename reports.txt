@@ -1,0 +1,65 @@
+npm i
+cd function
+npm i
+cd ..
+firebase login
+>>Already logged in as ggvlasov@gmail.com
+firebase deploy --only functions
+
+**********************************************************************************
+**********************************************************************************
+Output from terminal:
+
+=== Deploying to 'function-learn'...
+
+i  deploying functions
+Running command: npm --prefix "$RESOURCE_DIR" run lint
+
+> functions@ lint G:\_prgs\Firebase\firebase-function\functions
+> eslint .
+
+i  deploying functions
+Running command: npm --prefix "$RESOURCE_DIR" run lint
+
+> functions@ lint G:\_prgs\Firebase\firebase-function\functions
+> eslint .
+
++  functions: Finished running predeploy script.
+i  functions: ensuring necessary APIs are enabled...
++  functions: all necessary APIs are enabled
+i  functions: preparing functions directory for uploading...
+i  functions: packaged functions (37.13 KB) for uploading
++  functions: functions folder uploaded successfully
+i  functions: updating Node.js 8 function addMessage(us-central1)...
+i  functions: updating Node.js 8 function makeUppercase(us-central1)...
++  functions[addMessage(us-central1)]: Successful update operation. 
++  functions[makeUppercase(us-central1)]: Successful update operation. 
+
++  Deploy complete!
+
+Project Console: https://console.firebase.google.com/project/function-learn/overview
+PS G:\_prgs\Firebase\firebase-function> 
+
+
++  functions: Finished running predeploy script.
+i  functions: ensuring necessary APIs are enabled...
++  functions: all necessary APIs are enabled
+i  functions: preparing functions directory for uploading...
+i  functions: packaged functions (37.13 KB) for uploading
++  functions: functions folder uploaded successfully
+i  functions: updating Node.js 8 function addMessage(us-central1)...
+i  functions: updating Node.js 8 function makeUppercase(us-central1)...
++  functions[addMessage(us-central1)]: Successful update operation.
++  functions[makeUppercase(us-central1)]: Successful update operation.
+
++  Deploy complete!
+
+Project Console: https://console.firebase.google.com/project/function-learn/overview
+
+
+
+**********************************************************************************
+**********************************************************************************
+put in google chrome:
+
+https://us-central1-function-learn.cloudfunctions.net/addMessage?text=uppercaseme
